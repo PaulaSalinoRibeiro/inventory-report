@@ -34,7 +34,7 @@ class SimpleReport:
         most_products = SimpleReport.get_enterprise_most_products(list)
 
         return (
-            f"Data de fabridação mais antiga: {most_old} \n"
-            f"Data de validade mais próxima: {most_close} \n"
+            f"Data de fabricação mais antiga: {most_old}\n"
+            f"Data de validade mais próxima: {most_close}\n"
             f"Empresa com mais produtos: {most_products}"
         )
