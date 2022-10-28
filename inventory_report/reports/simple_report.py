@@ -28,9 +28,9 @@ class SimpleReport:
     @classmethod
     def generate(cls, list):
         most_old = SimpleReport.get_date_most_old(list)
-        print(most_old)
+
         most_close = SimpleReport.get_date_most_close(list)
-        print(most_close)
+
         most_products = SimpleReport.get_enterprise_most_products(list)
 
         return (
