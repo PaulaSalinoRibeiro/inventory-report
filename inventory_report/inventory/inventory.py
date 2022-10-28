@@ -24,7 +24,7 @@ class Inventory:
     def import_data(cls, path, type):
 
         data = Inventory.open_file(path)
-        print(data)
+
         if type == "simples":
             return SimpleReport.generate(data)
 
