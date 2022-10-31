@@ -5,6 +5,7 @@ from collections import Counter
 class SimpleReport:
     @classmethod
     def get_date_most_old(cls, list):
+
         return min(
             datetime.fromisoformat(item["data_de_fabricacao"]).date()
             for item in list
@@ -27,6 +28,7 @@ class SimpleReport:
 
     @classmethod
     def generate(cls, list):
+
         most_old = SimpleReport.get_date_most_old(list)
 
         most_close = SimpleReport.get_date_most_close(list)
